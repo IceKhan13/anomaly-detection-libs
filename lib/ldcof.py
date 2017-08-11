@@ -46,7 +46,11 @@ class LDCOF(object):
             idx = np.where(self.data_clusters == cluster)[0]
             diff = self.data[idx] - self.cluster_centers[cluster]
             dists = [d for d in map(lambda t: math.sqrt(sum([pow(e, 2) for e in t])), diff)]
-            distance = sum(dists) / len(dists)
+            if len(dists) > 0:
+                distance = sum(dists) / len(dists)
+            else:
+                distance = 0.00000000001
+
             distances[cluster] = distance
 
         self.distances = distances
@@ -55,7 +59,9 @@ class LDCOF(object):
         """ fit model on data """
         self.data = data
 
-        self.clusterer.fit(data)
+        kmeans = KMeans(n_clusters=self.n_clusters)
+        kmeans.fit(data)
+        self.clusterer = kmeans
         logging.info('Fit has been completed')
 
         self.data_clusters = self.clusterer.predict(data)
@@ -102,5 +108,5 @@ class LDCOF(object):
 
     def transform(self, data):
         res = self.__ldcof(data)
-        logging.info("Result: " + str(res))
+        #logging.info("Result: " + str(res))
         return res

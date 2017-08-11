@@ -18,11 +18,15 @@ Available algorithms:
 - ~~rPCA~~
 - ~~CMGOS~~
 - ~~One-class SVM~~
+- Autoencoder (NNet)
 
 ![image](docs/img/schema.png)
 
 ##### Requirements
 - numpy
+- scipy
 - scikit-learn
+- tensorflow
+- keras
 
 @author Iskandar Sitdikov
