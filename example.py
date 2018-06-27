@@ -1,5 +1,5 @@
 import numpy as np
-from lib.ldcof import LDCOF
+from icekhan.anomaly_detection.lib import LDCOF
 
 
 if __name__ == '__main__':
