@@ -1,6 +1,8 @@
 Unsupervised anomaly detection libs
 ===================================
 
+[![CircleCI](https://circleci.com/gh/IceKhan13/anomaly-detection-libs/tree/master.svg?style=svg)](https://circleci.com/gh/IceKhan13/anomaly-detection-libs/tree/master)
+
 Available algorithms:
 - [ ] kNN
 - [ ] kthNN
@@ -18,12 +20,5 @@ Available algorithms:
 - [ ] rPCA
 - [ ] CMGOS
 - [x] One-class SVM (is available in scikit-learn package)
-
-![image](docs/img/schema.png)
-
-##### Requirements
-- numpy
-- scipy
-- scikit-learn
 
 @author Iskandar Sitdikov
