@@ -1,0 +1,2 @@
+certifi==2018.4.16
+nd-singularity==0.6.9

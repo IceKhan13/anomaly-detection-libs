@@ -2,23 +2,22 @@ Unsupervised anomaly detection libs
 ===================================
 
 Available algorithms:
-- ~~kNN~~
-- ~~kthNN~~
-- ~~LOF~~
-- ~~COF~~
-- ~~INFLO~~
-- ~~LoOP~~
-- ~~LOCI~~
-- ~~aLOCI~~
-- ~~CBLOF~~
-- ~~uCBLOF~~
-- LDCOF
-- ~~CMGOS~~
-- ~~HBOS~~
-- ~~rPCA~~
-- ~~CMGOS~~
-- ~~One-class SVM~~
-- Autoencoder (NNet)
+- [ ] kNN
+- [ ] kthNN
+- [x] LOF (is available in scikit-learn package)
+- [ ] COF
+- [ ] INFLO
+- [ ] LoOP
+- [ ] LOCI
+- [ ] aLOCI
+- [ ] CBLOF
+- [ ] uCBLOF
+- [x] LDCOF
+- [ ] CMGOS
+- [ ] HBOS
+- [ ] rPCA
+- [ ] CMGOS
+- [x] One-class SVM (is available in scikit-learn package)
 
 ![image](docs/img/schema.png)
 
@@ -26,7 +25,5 @@ Available algorithms:
 - numpy
 - scipy
 - scikit-learn
-- tensorflow
-- keras
 
 @author Iskandar Sitdikov
